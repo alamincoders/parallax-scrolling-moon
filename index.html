@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moon Light Parallax Effects | Vanilla Js</title>
+    <!--  -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <section class="">
+      <img id="bg" src="./assets/bg.jpg" alt="bg" />
+      <img id="moon" src="./assets/moon.png" alt="moon" />
+      <img id="mountain" src="./assets/mountain.png" alt="mountain" />
+      <img id="road" src="./assets/road.png" alt="road" />
+      <h2 id="text">Moon Light</h2>
+    </section>
+
+    <section class="text_area">
+      <h2>Parallax Background Scrolling</h2>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod architecto saepe non a, atque sunt repudiandae nisi omnis, ullam fuga dolore
+          doloremque eos? Cupiditate, nam? Quos expedita qui dolorum maiores, iusto nostrum ducimus voluptatibus? Tempore amet nam mollitia sunt
+          tempora voluptatem sed dolorem autem unde modi, iure maxime nihil eaque voluptas debitis suscipit, magnam, vel culpa ad inventore tenetur
+          voluptate possimus saepe quod? Beatae corporis incidunt repellat illum mollitia assumenda earum sed optio consectetur! Quidem quibusdam
+          natus quis repellat in obcaecati ullam at corporis delectus rerum recusandae quaerat iste non optio totam, voluptatum consequatur vitae
+          praesentium ut id sint. Quos, eius sed natus tempora dolorum asperiores dignissimos officia sint repellat quod quas itaque facilis similique
+          esse, saepe excepturi hic laboriosam vitae. Numquam perspiciatis soluta tempora beatae veniam excepturi cupiditate cum commodi, vel
+          provident repellat perferendis voluptatem non voluptas, facilis reprehenderit earum dolore tenetur expedita quod laborum qui! Voluptate enim
+          expedita cupiditate illum veniam! Quo eligendi qui consequatur nihil blanditiis. Tempora dicta impedit incidunt placeat magnam nihil
+          quibusdam culpa? Repudiandae, voluptatum eligendi soluta inventore eum magni distinctio dolore facere, architecto laudantium dolor adipisci
+          voluptas optio obcaecati odio veritatis sit magnam eaque. Iusto beatae quas quo nisi ullam libero cumque, deleniti nesciunt explicabo
+          <br /><br /><br />
+          architecto, quibusdam ex adipisci, asperiores ut recusandae aut iste dicta harum obcaecati soluta. Fugit architecto veritatis explicabo
+          illum assumenda cum non, incidunt repellat debitis ipsa molestias aliquid adipisci est officia, dolor quia dolorem! Rerum ad reprehenderit
+          repellendus non, voluptate placeat deserunt porro nam ullam dignissimos qui, nobis, repudiandae corporis unde inventore soluta debitis
+          nostrum ipsum harum voluptatem? Possimus modi maxime quibusdam omnis. Iure neque excepturi, ea amet soluta numquam repellat itaque molestias
+          maiores dolores voluptatibus consequatur inventore fugit suscipit, voluptas eos maxime temporibus quae, voluptate doloremque autem incidunt
+          at! Quae accusamus rerum maxime eligendi, animi esse nobis dolores veritatis alias quod dignissimos sapiente aliquid. Nisi ratione
+          cupiditate neque earum aut sit, odio exercitationem natus, fugit perspiciatis corrupti, soluta minus totam? Nulla, dicta corporis. Saepe at
+          cupiditate in nam mollitia libero inventore non, labore sequi tempora architecto culpa ipsum? Blanditiis maxime ut incidunt in nesciunt
+          consequatur nemo molestiae sit fugit optio. Ullam, cumque tempore, porro molestias eligendi quidem voluptatum minima optio iste animi
+          consequuntur eos voluptates ipsa dolorum ipsam, totam quasi in placeat cupiditate aperiam inventore commodi! Voluptatibus corporis
+          aspernatur placeat, suscipit possimus eligendi excepturi perferendis consequatur magnam ipsam natus dolorem similique asperiores ab commodi
+          minima sit mollitia tempore molestias, quaerat distinctio sapiente praesentium dolor! Iste hic et minus ut eos eum laborum, maxime beatae,
+          vel laboriosam aut debitis omnis quibusdam voluptatibus. Est, sint. Dolorem soluta illo saepe sint tempore veniam, aliquid necessitatibus
+          iure molestias perferendis laudantium? Facere accusamus quidem totam quos, animi voluptatem omnis et, magnam aut fuga earum officia! Dolorum
+          labore exercitationem odio illum aspernatur, blanditiis saepe ducimus laboriosam incidunt fugit fuga nam iste nobis reprehenderit placeat
+          delectus reiciendis sunt, molestias praesentium debitis natus nihil atque. Facere odit sint reprehenderit labore cupiditate enim neque vero!
+          Est, maiores odio? Repellat nostrum esse a voluptatibus totam veritatis, deserunt architecto odit.
+        </p>
+      </article>
+    </section>
+
+    <script>
+      let bg = document.getElementById("bg");
+      let moon = document.getElementById("moon");
+      let mountain = document.getElementById("mountain");
+      let road = document.getElementById("road");
+      let text = document.getElementById("text");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+
+        bg.style.top = value * 0.5 + "px";
+        moon.style.left = -value * 0.5 + "px";
+        mountain.style.top = -value * 0.15 + "px";
+        road.style.top = value * 0.15 + "px";
+        text.style.top = value * 1 + "px";
+      });
+    </script>
+  </body>
+</html>
